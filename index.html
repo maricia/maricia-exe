@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MARICIA.EXE</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="game-screen">
+
+    <header>
+        <div class="brand"> maricia.com</div>
+        <div class="window-buttons">
+    <button>─</button>
+    <button>□</button>
+    <button>×</button>
+</div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-image-panel">
+                <div class="hero-bg"></div>
+                <div class="hero-dark"></div>
+                <div class="hero-content">
+                    <p class="version">v 1.0.0</p>
+                    <h1>MARICIA.EXE</h1>
+    
+                    <div class="title-box">
+                        Developer • Computer Scientist • MTB Rider
+                    </div>
+                <div class="hero-grid">              
+                
+                    <div class="left-column">
+                        <div class="menu-panel">
+                            <h3>&gt; MAIN MENU</h3>
+                            <ul>
+                                <li class="active">> START</li>
+                                <li>ABOUT MARICIA</li>
+                                <li>PROJECTS</li>
+                                <li>DATA ANALYTICS</li>
+                                <li>GAMES & APPS</li>
+                                <li>RESUME</li>
+                                <li>CONTACT</li>
+                                </ul>
+                        </div>     
+                    
+                    <div class="message-box">   
+                        <h2>&gt; SYSTEM MESSAGE</h2>   
+                        <div id="system-text"></div>
+                    </div>    
+                </div>
+
+                <div class="center-column"></div>
+    
+                <div class="right-column">
+                    <div class="stats-panel">
+                        <h2>&gt; STATS</h2>
+                        <div class="stat">
+                            <div class="stat-label">
+                                <div class="project-icon">🐍</div>
+                                Python
+                            </div>
+                            <span>95%</span>
+                        </div>
+                        <div class="bar"><div style="width:95%"></div></div>
+
+                        <div class="stat">
+                            <div class="stat-label">
+                                <div class="project-icon">📊</div>
+                                Excel / Power BI
+                            </div>
+                            <span>97%</span>
+                        </div>
+                        <div class="bar"><div style="width:97%"></div></div>
+
+                        <div class="stat">
+                            <div class="stat-label">
+                                <div class="project-icon">🛢️</div>
+                                SQL
+                            </div>
+                            <span>90%</span>
+                        </div>
+                        <div class="bar"><div style="width:90%"></div></div>
+
+                        <div class="stat">
+                            <div class="stat-label">
+                                <div class="project-icon">💾</div>
+                                AI / ML Data
+                            </div>
+                            <span>85%</span>
+                        </div>
+                        <div class="bar"><div style="width:85%"></div></div>
+
+                        <div class="stat">
+                            <div class="stat-label">
+                                <div class="project-icon">💡</div>
+                                Problem Solving
+                            </div>
+                            <span>95%</span>
+                        </div>
+                        <div class="bar"><div style="width:95%"></div></div>
+                        
+                        <div class="stat">
+                            <div class="stat-label">
+                                <div class="project-icon">🚵</div>
+                                MTB Skills
+                            </div>
+                            <span>88%</span>
+                        </div>
+                        <div class="bar"><div style="width:88%"></div></div>
+
+                        <div class="level-line">
+                            <span>LEVEL: 28</span>
+                            <span>EXP: 8,750</span>
+                            <span>NEXT: 9,999</span>
+                        </div>
+                        <div class="xp-bar">
+                            <div class="xp-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>                          
+        </section>
+
+        <section class="projects panel">
+            <h2>&gt; FEATURED PROJECTS</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-icon">🛢️</div>
+                    <div>SQL<br>Boss Battle</div>
+                    <div class="project-stars">★★★★★</div>
+                </div>
+             
+             <!--   <div class="project-card">SQL<br>Boss Battle</div>-->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <div class="project-icon">📊</div>
+                    </div>
+                    <div class="project-title">
+                        Power BI<br>
+                        Dashboard Quest
+                    </div>
+                    <div class="project-stars">★★★★★</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <div class="project-icon">🚢</div>
+                    </div>
+                    <div class="project-title">
+                        FleetChat<br>
+                        Naval Tactics
+                    </div>
+                    <div class="project-stars">★★★★★</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <div class="project-icon">📁</div>
+                    </div>
+                    <div class="project-title">
+                        File Sorter<br>
+                        9000
+                    </div>
+                    <div class="project-stars">★★★★★</div>
+                </div>               
+            </div>
+        </section>
+        </body>
+        <footer class="status-bar">
+            <span>© 2026 MARICIA.COM</span>
+            <span>BUILT WITH PYTHON • FLASK • 💗 • PIXEL POWER</span>
+            <span>PRESS H FOR HELP</span>
+        </footer>
+    </main>
+
+</div>
+<div class="scanlines"></div>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+<script>
+const backgrounds = [
+    "/static/images/focus_bg.png",
+    "/static/images/bike-bg.png",
+    "/static/images/bike_bg_1.png"
+];
+const randomImage =
+    backgrounds[Math.floor(Math.random() * backgrounds.length)];
+
+  const heroBg = document.querySelector(".hero-bg");
+
+  heroBg.style.backgroundImage = `url('${randomImage}')`;
+</script>
+<script>
+const text = `
+Welcome to my digital HQ.
+
+Explore my projects, skills, and adventures.
+
+Press START to begin...
+`;
+
+let i = 0;
+const speed = 35;
+
+function typeWriter() {
+    if (i < text.length) {
+        document.getElementById("system-text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+typeWriter();
+</script>
+
+</html>
