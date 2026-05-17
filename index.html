@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MARICIA.EXE</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -38,19 +40,15 @@
                             <h3>&gt; MAIN MENU</h3>
                             <ul>
                                 <li class="active">> START</li>
-                                <li>ABOUT MARICIA</li>
-                                <li>PROJECTS</li>
-                                <li>DATA ANALYTICS</li>
-                                <li>GAMES & APPS</li>
-                                <li>RESUME</li>
-                                <li>CONTACT</li>
-                                </ul>
+                                <li><a href="./about.html">ABOUT MARICIA</a></li>
+                                <li><a href="./projects.html">PROJECTS</a></li>
+                                <li><a href="./analytics.html">DATA ANALYTICS</a></li>
+                                <li><a href="./games.html">GAMES & APPS</a></li>
+                                <li><a href="./resume.html">RESUME</a></li>
+                            </ul>
                         </div>     
                     
-                    <div class="message-box">   
-                        <h2>&gt; SYSTEM MESSAGE</h2>   
-                        <div id="system-text"></div>
-                    </div>    
+                        
                 </div>
 
                 <div class="center-column"></div>
@@ -60,25 +58,7 @@
                         <h2>&gt; STATS</h2>
                         <div class="stat">
                             <div class="stat-label">
-                                <div class="project-icon">🐍</div>
-                                Python
-                            </div>
-                            <span>95%</span>
-                        </div>
-                        <div class="bar"><div style="width:95%"></div></div>
-
-                        <div class="stat">
-                            <div class="stat-label">
-                                <div class="project-icon">📊</div>
-                                Excel / Power BI
-                            </div>
-                            <span>97%</span>
-                        </div>
-                        <div class="bar"><div style="width:97%"></div></div>
-
-                        <div class="stat">
-                            <div class="stat-label">
-                                <div class="project-icon">🛢️</div>
+                                <div class="project-icon-stats">🛢️</div>
                                 SQL
                             </div>
                             <span>90%</span>
@@ -87,16 +67,34 @@
 
                         <div class="stat">
                             <div class="stat-label">
-                                <div class="project-icon">💾</div>
+                                <div class="project-icon-stats">🐍</div>
+                                Python
+                            </div>
+                            <span>75%</span>
+                        </div>
+                        <div class="bar"><div style="width:75%"></div></div>
+                                            
+                        <div class="stat">
+                            <div class="stat-label">
+                                <div class="project-icon-stats">📊</div>
+                                SnowFlake
+                            </div>
+                            <span>40%</span>
+                        </div>
+                        <div class="bar"><div style="width:40%"></div></div>
+                                              
+                        <div class="stat">
+                            <div class="stat-label">
+                                <div class="project-icon-stats">💾</div>
                                 AI / ML Data
                             </div>
-                            <span>85%</span>
+                            <span>55%</span>
                         </div>
-                        <div class="bar"><div style="width:85%"></div></div>
+                        <div class="bar"><div style="width:55%"></div></div>
 
                         <div class="stat">
                             <div class="stat-label">
-                                <div class="project-icon">💡</div>
+                                <div class="project-icon-stats">💡</div>
                                 Problem Solving
                             </div>
                             <span>95%</span>
@@ -105,7 +103,7 @@
                         
                         <div class="stat">
                             <div class="stat-label">
-                                <div class="project-icon">🚵</div>
+                                <div class="project-icon-stats">🚵</div>
                                 MTB Skills
                             </div>
                             <span>88%</span>
@@ -113,9 +111,9 @@
                         <div class="bar"><div style="width:88%"></div></div>
 
                         <div class="level-line">
-                            <span>LEVEL: 28</span>
-                            <span>EXP: 8,750</span>
-                            <span>NEXT: 9,999</span>
+                            <span>LEVEL:28</span>
+                            <!-- <span>EXP:8,750</span> -->
+                            <span>NEXT:9,999</span>
                         </div>
                         <div class="xp-bar">
                             <div class="xp-fill"></div>
@@ -124,96 +122,269 @@
                 </div>
             </div>                          
         </section>
+    
+        <section class="bottom-hud">
 
-        <section class="projects panel">
-            <h2>&gt; FEATURED PROJECTS</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-icon">🛢️</div>
-                    <div>SQL<br>Boss Battle</div>
-                    <div class="project-stars">★★★★★</div>
-                </div>
-             
-             <!--   <div class="project-card">SQL<br>Boss Battle</div>-->
-                <div class="project-card">
-                    <div class="project-icon">
+        <div class="message-box">   
+            <h2>&gt; SYSTEM MESSAGE</h2>   
+            <div id="system-text"></div>
+        </div>
+
+        <section id="projects" class="projects panel">
+                <h2>&gt; FEATURED PROJECTS</h2>
+
+                <div class="project-grid">
+                    <div class="project-card"
+                        onclick='openProject(
+                        `SNOWFLAKE // DATA CLEANING TERMINAL`,
+                        `STATUS: COMPLETE ✓
+
+                        Mission: Clean and transform messy customer data using Snowflake SQL.
+
+                        TOOLS:
+                        • Snowflake
+                        • SQL
+                        • Data Cleaning
+                        • Views
+                        • Window Functions
+
+                        OBJECTIVES COMPLETED:
+                        ✓ Remove unwanted characters
+                        ✓ Handle missing values
+                        ✓ Eliminate duplicate records
+                        ✓ Create calculated fields
+                        ✓ Build reusable views
+                        ✓ Identify inactive customers
+
+                        REWARD UNLOCKED:
+                        + SQL EXPERIENCE +25 XP
+                        + DATA ENGINEERING +15 XP
+
+                        <a class="modal-button"
+                        href="https://github.com/maricia/Coursera---Data-Cleaning-in-Snowflake"
+                        target="_blank">
+                        VIEW GITHUB
+                        </a>`
+                        )'>
+
+                        <div class="project-icon">❄️</div>
+
+                        <h3>SNOWFLAKE</h3>
+
+                        <p>SQL Boss Battle</p>
+
+                        <div class="project-stars">
+                        ★★★★★
+                        </div>
+
+                    </div>
+
+                    <div class="project-card">
                         <div class="project-icon">📊</div>
+                        <div class="project-title">Power BI<br>Dashboard Quest</div>
+                        <div class="project-stars">★★★★★</div>
                     </div>
-                    <div class="project-title">
-                        Power BI<br>
-                        Dashboard Quest
+                    
+                    <div class="project-card" onclick="openProject(
+                        'FleetChat',
+                        `
+                        <div class='project-status classified'>
+                            <span class='blink'>[ ACCESS DENIED ]</span>
+                        </div>
+
+                        <p class='project-description'>
+                            Internal fleet communication platform currently operating
+                            under restricted repository access.
+                        </p>
+
+                        <div class='classified-panel'>
+                            <p>> PROJECT: FleetChat</p>
+                            <p>> STATUS: PRIVATE BUILD</p>
+                            <p>> SECURITY: LEVEL 7</p>
+                            <p>> REPO VISIBILITY: CLASSIFIED</p>
+                        </div>
+
+                        <a class='modal-button disabled-button'>
+                            CLASSIFIED
+                        </a>
+                        `
+                        )">
+                            <div class="project-icon">🚢</div>
+                            <div class="project-title">
+                                FleetChat<br>Naval Tactics
+                            </div>
+                            <div class="project-stars">★★★★★</div>
                     </div>
-                    <div class="project-stars">★★★★★</div>
+                    
+                    <div class="project-card" onclick="openProject(
+                        'File Sorter 9000',
+                        `
+                            <h2>File Sorter 9000</h2>
+
+                            <p>
+                            A Python automation tool that sorts testing files
+                            from ZIP archives into clean folders.
+                            </p>
+
+                            <h3>TOOLS USED</h3>
+                            <p>
+                            Python • Tkinter • File Automation • Data Validation
+                            </p>
+
+                            <h3>WHY IT MATTERS</h3>
+                            <p>
+                            Reduces manual sorting time and helps teams organize
+                            STAAR, TELPAS, and ODS files faster.
+                            </p>
+
+                            <a class='modal-button'
+                            href='https://github.com/maricia/SDR-Sorter'
+                            target='_blank'>
+                            VIEW GITHUB
+                            </a>
+                            `
+                        )">
+                            <div class="project-icon">📁</div>
+
+                            <div class="project-title">
+                                File Sorter<br>9000
+                            </div>
+
+                            <div class="project-stars">
+                                ★★★★★
+                            </div>
+                    </div>
+                    
+                    
+                    
                 </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <div class="project-icon">🚢</div>
-                    </div>
-                    <div class="project-title">
-                        FleetChat<br>
-                        Naval Tactics
-                    </div>
-                    <div class="project-stars">★★★★★</div>
+            </section>
+
+            <aside class="quest-panel">
+                <h2>&gt; CURRENT QUEST</h2>
+                <p>🚩 Build a retro portfolio that levels up.</p>
+
+                <div class="quest-progress-row">
+
+                <div class="quest-bar">
+                    <div class="quest-fill"></div>
                 </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <div class="project-icon">📁</div>
+
+                <div class="quest-percent">
+                    75%
+                </div>
+
+                </div>
+
+                <p>REWARD:</p>
+
+                <div class="quest-reward-row">
+
+                    <div class="quest-reward-text">
+                        More Opportunities<br>
+                        New Adventures
                     </div>
-                    <div class="project-title">
-                        File Sorter<br>
-                        9000
-                    </div>
-                    <div class="project-stars">★★★★★</div>
-                </div>               
-            </div>
+
+                    <img 
+                        src="./images/chest.png"
+                        alt="Treasure Chest"
+                        class="treasure-chest"
+                    >
+
+                </div>
+            </aside>
+
         </section>
-        </body>
+        
+        
+ <!--       <section id="about" class="panel">
+    
+            <h2>> ABOUT MARICIA</h2>
+            <p>Director of District Data Analytics, developer,computer scientist, and mountain biker.</p>
+            <p>I build SQL systems, Power BI dashboards, automation tools, and retro-inspired applications.</p>
+
+        </section>-->
+
+        <div id="project-modal" class="modal hidden">
+            <div class="modal-window">
+
+                <div class="modal-header">
+                    <span id="modal-title">PROJECT TITLE</span>
+                    <button onclick="closeModal()">X</button>
+                </div>
+
+                <div class="modal-content" id="modal-content">
+                    PROJECT CONTENT
+                </div>
+
+            </div>
+        </div>
+
         <footer class="status-bar">
             <span>© 2026 MARICIA.COM</span>
             <span>BUILT WITH PYTHON • FLASK • 💗 • PIXEL POWER</span>
             <span>PRESS H FOR HELP</span>
+            [![Netlify Status](https://api.netlify.com/api/v1/badges/098e3ddd-d351-4e84-99e4-3e9f7e07fa10/deploy-status)](https://app.netlify.com/projects/maricia-exe/deploys)
         </footer>
     </main>
 
 </div>
 <div class="scanlines"></div>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  lucide.createIcons();
-</script>
-<script>
-const backgrounds = [
-    "/images/focus_bg.png",
-    "/images/bike-bg.png",
-    "/images/bike_bg_1.png"
-];
-const randomImage =
-    backgrounds[Math.floor(Math.random() * backgrounds.length)];
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+    lucide.createIcons();
+    </script>
+        <script>
+            const backgrounds = [
+                "images/focus_bg.png",
+                "images/bike-bg.png",
+                "images/bike_bg_1.png"
+            ];
+            const randomImage =
+                backgrounds[Math.floor(Math.random() * backgrounds.length)];
 
-  const heroBg = document.querySelector(".hero-bg");
+            const heroBg = document.querySelector(".hero-bg");
 
-  heroBg.style.backgroundImage = `url('${randomImage}')`;
-</script>
-<script>
-const text = `
-Welcome to my digital HQ.
+            heroBg.style.backgroundImage = `url('${randomImage}')`;
+            </script>
+            <script>
+            const text = `
+            Welcome to my digital HQ.
 
-Explore my projects, skills, and adventures.
+            Explore my projects, skills, and adventures.
 
-Press START to begin...
-`;
+            Press START to begin...
+            `;
 
-let i = 0;
-const speed = 35;
+            let i = 0;
+            const speed = 35;
 
-function typeWriter() {
-    if (i < text.length) {
-        document.getElementById("system-text").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-}
-typeWriter();
-</script>
+            function typeWriter() {
+                const systemText = document.getElementById("system-text");
 
+                if (i < text.length) {
+                    systemText.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                } else {
+                    systemText.innerHTML += '<span class="blink">█</span>';
+                }
+            }
+
+            typeWriter();
+            
+            function openProject(title, content) {
+                document.getElementById("modal-title").innerText = title;
+                document.getElementById("modal-content").innerHTML = content;
+
+                document.getElementById("project-modal")
+                    .classList.remove("hidden");
+            }
+
+            function closeModal() {
+                document.getElementById("project-modal")
+                    .classList.add("hidden");
+            }
+        </script>
+    </body>
 </html>
