@@ -344,6 +344,24 @@ svg {
     justify-content: flex-end;
 }
 
+.status{
+
+    margin-top:15px;
+
+    border:1px solid #39ff14;
+
+    padding:6px;
+
+    text-align:center;
+
+    font-size:12px;
+
+    color:#39ff14;
+
+    background:rgba(57,255,20,.08);
+
+}
+
 .status-bar {
     display: flex;
     justify-content: space-between;
