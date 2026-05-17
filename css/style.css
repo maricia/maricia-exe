@@ -485,6 +485,9 @@ svg {
 .menu-panel li:hover a,
 .menu-panel li.active a {
     color: black;
+    background: #39ff14;
+    padding-left: 8px;
+    box-shadow: 0 0 12px rgba(57, 255, 20, .10.8);
 }
 
 .stats-panel  {
