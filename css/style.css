@@ -165,11 +165,11 @@ main {
 
 .project-card {
     border: 1px solid #39ff14;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
-    background: rgba(0,0,0,.7);
+    background: rgba(0,0,0,.75);
     font-size: 18px;
-    min-height: 80px;
+    min-height: 260px;
 }
 
 .scanlines {
