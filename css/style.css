@@ -339,12 +339,14 @@ svg {
     min-height: 360px;
 }
 
-.right-column {
-    align-self:start;
+.right-column{
     display:flex;
     flex-direction:column;
-    justify-content:flex-start;
     gap:20px;
+
+    align-self:start;
+
+    margin-top:-95px;
 }
 
 .status{
@@ -512,7 +514,7 @@ svg {
 }
 
 .stats-panel  {
-    
+    margin-top: 0px;
     font-size: 22px;
     width: 280px;
     padding: 14px;
@@ -1106,13 +1108,7 @@ svg {
     position:relative;
 }
 
-.right-column{
-    position:absolute !important;
-    top:80px !important;
-    right:35px !important;
-    width:250px !important;
-    z-index:20 !important;
-}
+
 
 .stats-panel{
     height:auto !important;
