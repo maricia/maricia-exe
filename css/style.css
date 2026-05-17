@@ -647,6 +647,7 @@ svg {
 @media (max-width: 1000px) {
     .hero-grid {
         grid-template-columns: 1fr;
+        margin-top: 16px;
     }
 
     .menu-panel,
