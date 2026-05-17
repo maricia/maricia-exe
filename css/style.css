@@ -455,7 +455,7 @@ svg {
     width: 285px;              /* makes menu less wide */
     padding: 18px 16px;
     margin-left: 0;    /* pushes menu to the right */
-
+    margin-bottom: 28px;
     border: 2px solid #39ff14;
     border-radius: 6px;        /* fixes sharp awkward corners */
 
@@ -1054,7 +1054,7 @@ svg {
 .system-profile{
 
     margin-top:20px;
-    margin-bottom:20px;
+    margin-bottom:28px;
 
     padding:14px;
 
@@ -1087,4 +1087,7 @@ svg {
 
     color:white;
     font-weight:bold;
+}
+.system-message {
+    margin-top: 28px;
 }
