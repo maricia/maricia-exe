@@ -696,6 +696,7 @@ svg {
     box-shadow: 0 0 12px rgba(57,255,20,.25);
     padding: 20px;
     color: #39ff14;
+    margin-top:40px;
 }
 
 .quest-panel h2 {
@@ -1100,21 +1101,41 @@ svg {
     z-index: 5;
 }
 /* FORCE RIGHT HUD POSITION */
-.hero-grid{
-    align-items:flex-start !important;
+/* RIGHT HUD FIX */
+.hero-image-panel{
+    position:relative;
 }
 
 .right-column{
     position:absolute !important;
     top:80px !important;
     right:35px !important;
-    width:260px !important;
+    width:250px !important;
     z-index:20 !important;
 }
 
 .stats-panel{
     height:auto !important;
+    min-height:0 !important;
     max-height:none !important;
+    padding:18px !important;
     overflow:visible !important;
-    min-height:520px !important;
+}
+
+.stats-panel h2{
+    margin:0 0 14px 0;
+    font-size:18px;
+}
+
+.system-profile{
+    padding:10px !important;
+    margin-bottom:18px !important;
+}
+
+.stat{
+    margin-top:8px !important;
+}
+
+.bar{
+    margin-bottom:8px !important;
 }
