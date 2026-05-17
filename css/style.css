@@ -1097,4 +1097,5 @@ svg {
 .right-column{
     position:relative;
     top:-140px;
+    z-index: 5;
 }
