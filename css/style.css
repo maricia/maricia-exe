@@ -1094,3 +1094,7 @@ svg {
 .system-message {
     margin-top: 28px;
 }
+.right-column{
+    position:relative;
+    top:-120px;
+}
