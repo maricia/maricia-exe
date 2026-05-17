@@ -340,8 +340,11 @@ svg {
 }
 
 .right-column {
-    display: flex;
-    justify-content: flex-end;
+    align-self:start;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    gap:20px;
 }
 
 .status{
@@ -525,7 +528,6 @@ svg {
 }
 
 .stats-panel h3 {
-    margin-top: 0;
     margin-bottom: 10px;
 }
 
