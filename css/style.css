@@ -517,14 +517,14 @@ svg {
     width: 280px;
     padding: 14px;
     
-    max-height: 500px;
+    height: auto;
     border: 2px solid #39ff14;
     border-radius: 6px;
     background: rgba(0,0,0,.72);
     box-shadow:
         0 0 14px rgba(57,255,20,.35),
         inset 0 0 12px rgba(57,255,20,.10);
-    overflow: hidden;
+    
 }
 
 .stats-panel h3 {
