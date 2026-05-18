@@ -1097,11 +1097,7 @@ svg {
 .system-message {
     margin-top: 28px;
 }
-.right-column{
-    position:relative;
-    top:-140px;
-    z-index: 5;
-}
+
 /* FORCE RIGHT HUD POSITION */
 /* RIGHT HUD FIX */
 .hero-image-panel{
