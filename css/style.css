@@ -342,12 +342,13 @@ svg {
 .right-column{
     display:flex;
     flex-direction:column;
-    gap:20px;
+
+    gap:16px;
 
     align-self:start;
 
-    margin-top:-115px;
-    margin-left: -20px;
+    margin-top:-155px;
+    margin-left:-15px;
 }
 
 .status{
@@ -515,12 +516,7 @@ svg {
 }
 
 .stats-panel  {
-    margin-top: 0px;
-    font-size: 22px;
-    width: 280px;
-    padding: 14px;
     
-    height: auto;
     border: 2px solid #39ff14;
     border-radius: 6px;
     background: rgba(0,0,0,.72);
@@ -699,7 +695,7 @@ svg {
     box-shadow: 0 0 12px rgba(57,255,20,.25);
     padding: 20px;
     color: #39ff14;
-    margin-top:40px;
+    margin-top:15px;
 }
 
 .quest-panel h2 {
@@ -1110,9 +1106,10 @@ svg {
     height:auto !important;
     min-height:0 !important;
     max-height:none !important;
-    padding:18px !important;
+    padding:14px !important;
     overflow:visible !important;
     width: 300px !important;
+    font-size: 22px;   
 }
 
 .stats-panel h2{
