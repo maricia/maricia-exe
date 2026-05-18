@@ -103,7 +103,7 @@
                         <div class="stat">
                             <div class="stat-label">
                                 <div class="project-icon-stats">📊</div>
-                                SnowFlake
+                                Snowflake
                             </div>
                             <span>40%</span>
                         </div>
@@ -162,7 +162,7 @@
                 <div class="project-grid">
                     <div class="project-card"
                         onclick='openProject(
-                        `SNOWFLAKE // DATA CLEANING TERMINAL`,
+                        `Snowflake // DATA CLEANING TERMINAL`,
                         `STATUS: COMPLETE ✓
 
                         Mission: Clean and transform messy customer data using Snowflake SQL.
@@ -186,16 +186,15 @@
                         + SQL EXPERIENCE +25 XP
                         + DATA ENGINEERING +15 XP
 
-                        <a class="modal-button"
-                        href="https://github.com/maricia/Coursera---Data-Cleaning-in-Snowflake"
-                        target="_blank">
+                        <a class="modal-button" href="https://github.com/maricia/Coursera---Data-Cleaning-in-Snowflake"
+                        target="_blank" rel="noopener">
                         VIEW GITHUB
                         </a>`
                         )'>
 
                         <div class="project-icon">❄️</div>
 
-                        <h3>SNOWFLAKE</h3>
+                        <h3>Snowflake</h3>
 
                         <p>SQL Boss Battle</p>
 
@@ -322,6 +321,19 @@
 
         </section>
         
+        <div id="project-modal" class="modal hidden">
+            <div class="modal-window">
+
+                <div class="modal-header">
+                    <span id="modal-title">PROJECT TITLE</span>
+                    <button onclick="closeModal()">X</button>
+                </div>
+
+                <div class="modal-content" id="modal-content">
+                    PROJECT CONTENT
+                </div>
+            </div>
+        </div>
         
 
         <footer class="status-bar">
