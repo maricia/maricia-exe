@@ -259,11 +259,8 @@ svg {
 
 .hero-image-panel {
     position: relative;
-    height: 700px;
-    /*height: 620px;*/
-    /*border: 2px solid #39ff14;*/
+    height: 640px;
     overflow: visible;
-   /* background: #050505;*/
 }
 
 .hero-bg {
@@ -325,7 +322,7 @@ svg {
     gap: 40px;
     align-items: start;
     width: auto;
-    margin: 32px 0 0 0;
+    margin-top: 10px;
 }
 
 .left-column {
@@ -342,13 +339,12 @@ svg {
 .right-column{
     display:flex;
     flex-direction:column;
-
     gap:16px;
 
     align-self:start;
 
-    margin-top:-155px;
-    margin-left:-15px;
+    margin-top:-115px;
+    margin-left:-10px;
 }
 
 .status{
