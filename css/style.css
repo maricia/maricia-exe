@@ -346,7 +346,8 @@ svg {
 
     align-self:start;
 
-    margin-top:-95px;
+    margin-top:-115px;
+    margin-left: -20px;
 }
 
 .status{
@@ -1058,11 +1059,11 @@ svg {
     0 0 15px rgba(57,255,20,.6);
 }
 .system-profile{
+    width: 100% !important;
+    margin-top:0px !important;
+    margin-bottom:18px !important;
 
-    margin-top:20px;
-    margin-bottom:28px;
-
-    padding:14px;
+    padding:10px !important;
 
     border:1px solid #39ff14;
 
@@ -1070,8 +1071,7 @@ svg {
 
     box-shadow:
     0 0 10px rgba(57,255,20,.35);
-
-    width:280px;
+   
 }
 
 .system-profile h3{
@@ -1112,6 +1112,7 @@ svg {
     max-height:none !important;
     padding:18px !important;
     overflow:visible !important;
+    width: 300px !important;
 }
 
 .stats-panel h2{
