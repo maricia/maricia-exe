@@ -324,9 +324,8 @@
             </aside>
 
         </section>
-
         <!-- Retro Portfolio Project Proof Layer -->
-        <section class="case-study-zone" id="projects-proof">  
+<section class="case-study-zone" id="projects-proof">
   <div class="terminal-heading">
     <p class="terminal-kicker">&gt; PROJECT ARCHIVE LOADED</p>
     <h2>Operational Systems I Built</h2>
@@ -337,6 +336,7 @@
   </div>
 
   <div class="case-study-grid">
+
     <!-- SDR ZIP SORTER -->
     <article class="case-card">
       <div class="case-card-header">
@@ -383,9 +383,46 @@
           <li>Generated logs for unsorted files and review.</li>
         </ul>
       </div>
+
+      <button class="modal-button" onclick="openProject(
+        'SDR Zip Sorter',
+        `
+        <h2>SDR Zip Sorter</h2>
+
+        <p>
+          Desktop automation tool for organizing state assessment files.
+        </p>
+
+        <h3>Problem</h3>
+        <p>
+          District SDR assessment files required manual extraction and sorting across multiple testing categories.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+          Built a Python/Tkinter desktop tool that lets users select an SDR ZIP file, choose TestHound or ODS mode,
+          select an output folder, and automatically sort files into standardized folders.
+        </p>
+
+        <h3>Tools</h3>
+        <p>Python • Tkinter • VS Code • ZIP Processing • Windows Automation</p>
+
+        <h3>Impact</h3>
+        <p>
+          Reduced manual file organization, standardized SDR folder output, created a GUI for non-technical users,
+          and generated logs for review.
+        </p>
+
+        <a class='modal-button' href='https://github.com/maricia/SDR-Sorter' target='_blank' rel='noopener'>
+          VIEW GITHUB
+        </a>
+        `
+      )">
+        VIEW DETAILS
+      </button>
     </article>
 
-    <!-- ACCOUNTABILITY DASHBOARD -->
+    <!-- CAMPUS SNAPSHOT DASHBOARD -->
     <article class="case-card">
       <div class="case-card-header">
         <span class="project-badge">POWER BI</span>
@@ -431,6 +468,40 @@
           <li>Supported data-informed conversations with campus teams.</li>
         </ul>
       </div>
+
+      <button class="modal-button" onclick="openProject(
+        'Campus Snapshot Dashboard',
+        `
+        <h2>Campus Snapshot Dashboard</h2>
+
+        <p>
+          Multi-year accountability and student demographic reporting dashboard.
+        </p>
+
+        <h3>Problem</h3>
+        <p>
+          Campus leaders needed one place to view accountability ratings, enrollment, demographics,
+          and student support indicators.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+          Designed a Power BI dashboard combining accountability history, enrollment counts,
+          grade-level distribution, demographic groups, and support indicators.
+        </p>
+
+        <h3>Tools</h3>
+        <p>Power BI • DAX • Data Modeling • TEA Accountability • Operational Reporting</p>
+
+        <h3>Impact</h3>
+        <p>
+          Created a single-page view for campus performance context and supported faster,
+          data-informed conversations with campus teams.
+        </p>
+        `
+      )">
+        VIEW DETAILS
+      </button>
     </article>
 
     <!-- GRADUATION EARLY WARNING -->
@@ -478,10 +549,45 @@
           <li>Combined summary KPIs with student-level drilldown detail.</li>
           <li>Helped transform static reports into an actionable monitoring tool.</li>
         </ul>
-        </div>
+      </div>
+
+      <button class="modal-button" onclick="openProject(
+        'Graduation Early Warning System',
+        `
+        <h2>Graduation Early Warning System</h2>
+
+        <p>
+          Operational dashboard for monitoring cohort progress.
+        </p>
+
+        <h3>Problem</h3>
+        <p>
+          Graduation monitoring required visibility into student-level credits, cohort status,
+          campus distribution, and student support indicators.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+          Built an interactive Power BI dashboard to track cohort counts, credits, grade-level distribution,
+          EB and SPED indicators, ethnicity breakdowns, and student detail records.
+        </p>
+
+        <h3>Tools</h3>
+        <p>Power BI • DAX • Student Analytics • Data Modeling • Executive Reporting</p>
+
+        <h3>Impact</h3>
+        <p>
+          Improved visibility into cohort progress and helped turn static reports into an actionable monitoring tool.
+        </p>
+        `
+      )">
+        VIEW DETAILS
+      </button>
     </article>
-    </div>
-        </section>
+
+  </div>
+</section>
+
         
         <div id="project-modal" class="modal hidden">
             <div class="modal-window">
