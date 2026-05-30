@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,324 +12,373 @@
 
 <body>
 
-<div class="game-screen">
+    <div class="game-screen">
 
-    <header>
-        <div class="brand">maricia.com</div>
+        <header>
+            <div class="brand">maricia.com</div>
 
-        <div class="window-buttons">
-            <button>─</button>
-            <button>□</button>
-            <button>×</button>
-        </div>
-    </header>
+            <div class="window-buttons">
+                <button>─</button>
+                <button>□</button>
+                <button>×</button>
+            </div>
+        </header>
 
-    <main>
+        <main>
 
-        <p class="path-line">&gt; HOME / WORK_PROJECTS.EXE</p>
+            <p class="path-line">&gt; HOME / WORK_PROJECTS.EXE</p>
 
-        <div class="resume-nav">
-            <a href="./index.html" class="terminal-button">◄ MAIN MENU</a>
-            <a href="./artwork.html" class="terminal-button">ARTWORK ►</a>
-        </div>
-
-        <section class="case-study-zone" id="projects-proof">
-
-            <div class="terminal-heading">
-                <p class="terminal-kicker">&gt; WORK ARCHIVE LOADED</p>
-
-                <h2>Operational Systems I Built</h2>
-
-                <p>
-                    Data platforms, dashboards, automation tools, and reporting systems built to reduce manual work,
-                    improve accuracy, and turn messy operational data into usable systems.
-                </p>
+            <div class="resume-nav">
+                <a href="./index.html" class="terminal-button">◄ MAIN MENU</a>
+                <a href="./artwork.html" class="terminal-button">ARTWORK ►</a>
             </div>
 
-            <div class="case-study-grid">
+            <section class="case-study-zone" id="projects-proof">
 
-                <!-- LONE STAR DATA PLATFORM -->
+                <div class="terminal-heading">
+                    <p class="terminal-kicker">&gt; WORK ARCHIVE LOADED</p>
+
+                    <h2>Operational Systems I Built</h2>
+
+                    <p>
+                        Data platforms, dashboards, automation tools, and reporting systems built to reduce manual work,
+                        improve accuracy, and turn messy operational data into usable systems.
+                    </p>
+                </div>
+
+                <div class="case-study-grid">
+
+                    <!-- LONE STAR DATA PLATFORM -->
+                    <article class="case-card">
+                        <div class="case-card-header">
+                            <span class="project-badge">SNOWFLAKE</span>
+                            <span class="project-status">DATA PLATFORM</span>
+                        </div>
+
+                        <img src="./images/snowflake-platform.png" alt="Snowflake data platform screenshot"
+                            class="case-image">
+
+                        <h3>Lone Star Data Platform</h3>
+
+                        <p class="case-tagline">Layered data warehouse using raw, staging, and analytics schemas.</p>
+
+                        <div class="case-block">
+                            <h4>&gt; Problem</h4>
+                            <p>
+                                District data lived across multiple spreadsheets, state reports, and vendor systems with
+                                no central analytics layer.
+                            </p>
+                        </div>
+
+                        <div class="case-block">
+                            <h4>&gt; Solution</h4>
+                            <p>
+                                Designed a Snowflake-based warehouse structure to load, clean, stage, and model
+                                education datasets for Power BI reporting.
+                            </p>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>Snowflake</span>
+                            <span>SQL</span>
+                            <span>Power BI</span>
+                            <span>Data Modeling</span>
+                        </div>
+
+                        <div class="impact-panel">
+                            <h4>&gt; Impact</h4>
+                            <ul>
+                                <li>Created a modern analytics foundation.</li>
+                                <li>Separated raw, staging, and analytics layers.</li>
+                                <li>Prepared district data for reporting and reuse.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- CCMR CLASSIFICATION ENGINE -->
+                    <article class="case-card">
+                        <div class="case-card-header">
+                            <span class="project-badge">SQL ENGINE</span>
+                            <span class="project-status">ACCOUNTABILITY</span>
+                        </div>
+
+                        <img src="./images/ccmr-engine.png" alt="CCMR classification engine screenshot"
+                            class="case-image">
+
+                        <h3>CCMR Classification Engine</h3>
+
+                        <p class="case-tagline">TEA-aligned accountability logic for student CCMR buckets.</p>
+
+                        <div class="case-block">
+                            <h4>&gt; Problem</h4>
+                            <p>
+                                CCMR accountability logic required multiple rules across IBC tiers, TSI, dual credit,
+                                AP/IB, OnRamps, and special populations.
+                            </p>
+                        </div>
+
+                        <div class="case-block">
+                            <h4>&gt; Solution</h4>
+                            <p>
+                                Built classification logic to assign students into CCMR buckets, calculate IBC tier
+                                status, and support weighted scoring.
+                            </p>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>SQL Server</span>
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Accountability</span>
+                        </div>
+
+                        <div class="impact-panel">
+                            <h4>&gt; Impact</h4>
+                            <ul>
+                                <li>Reduced manual CCMR interpretation.</li>
+                                <li>Aligned reporting to TEA accountability rules.</li>
+                                <li>Supported campus and district dashboards.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- SDR ZIP SORTER -->
+                    <article class="case-card">
+                        <div class="case-card-header">
+                            <span class="project-badge">PYTHON TOOL</span>
+                            <span class="project-status">DEPLOYED</span>
+                        </div>
+
+                        <img src="./images/sdr4.png" alt="Screenshot of SDR Zip Sorter desktop application"
+                            class="case-image">
+
+                        <h3>SDR Zip Sorter</h3>
+
+                        <p class="case-tagline">Desktop automation tool for organizing state assessment files.</p>
+
+                        <div class="case-block">
+                            <h4>&gt; Problem</h4>
+                            <p>
+                                SDR assessment files required manual sorting across STAAR, TELPAS, EOC, ODS, and
+                                TestHound workflows.
+                            </p>
+                        </div>
+
+                        <div class="case-block">
+                            <h4>&gt; Solution</h4>
+                            <p>
+                                Built a Python/Tkinter desktop tool to select ZIP files, choose a workflow mode, sort
+                                files, and generate unsorted logs.
+                            </p>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Tkinter</span>
+                            <span>ZIP Processing</span>
+                            <span>Automation</span>
+                        </div>
+
+                        <div class="impact-panel">
+                            <h4>&gt; Impact</h4>
+                            <ul>
+                                <li>Reduced manual file handling.</li>
+                                <li>Standardized output folder structure.</li>
+                                <li>Created a GUI for non-technical users.</li>
+                            </ul>
+                        </div>
+
+                        <a class="modal-button" href="https://github.com/maricia/SDR-Sorter" target="_blank"
+                            rel="noopener">
+                            VIEW GITHUB
+                        </a>
+                    </article>
+
+                    <!-- CAMPUS SNAPSHOT DASHBOARD -->
+                    <article class="case-card">
+                        <div class="case-card-header">
+                            <span class="project-badge">POWER BI</span>
+                            <span class="project-status">ANALYTICS</span>
+                        </div>
+
+                        <img src="./images/campus-snapshot.png"
+                            alt="Power BI campus accountability dashboard screenshot" class="case-image">
+
+                        <h3>Campus Snapshot Dashboard</h3>
+
+                        <p class="case-tagline">Multi-year accountability and demographic reporting.</p>
+
+                        <div class="case-block">
+                            <h4>&gt; Problem</h4>
+                            <p>
+                                Campus leaders needed one place to view accountability ratings, enrollment,
+                                demographics, and student indicators.
+                            </p>
+                        </div>
+
+                        <div class="case-block">
+                            <h4>&gt; Solution</h4>
+                            <p>
+                                Designed a Power BI dashboard combining rating history, enrollment counts, grade
+                                distribution, and student group indicators.
+                            </p>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Data Modeling</span>
+                            <span>TEA Data</span>
+                        </div>
+
+                        <div class="impact-panel">
+                            <h4>&gt; Impact</h4>
+                            <ul>
+                                <li>Created a single-page campus view.</li>
+                                <li>Improved access to accountability context.</li>
+                                <li>Supported data-informed campus conversations.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- GRADUATION EARLY WARNING -->
+                    <article class="case-card">
+                        <div class="case-card-header">
+                            <span class="project-badge">POWER BI</span>
+                            <span class="project-status">EARLY WARNING</span>
+                        </div>
+
+                        <img src="./images/early-warning.png"
+                            alt="Graduation Early Warning System Power BI dashboard screenshot" class="case-image">
+
+                        <h3>Graduation Early Warning System</h3>
+
+                        <p class="case-tagline">Operational dashboard for monitoring cohort progress.</p>
+
+                        <div class="case-block">
+                            <h4>&gt; Problem</h4>
+                            <p>
+                                Graduation monitoring required student-level visibility into credits, cohort status,
+                                campus distribution, and support indicators.
+                            </p>
+                        </div>
+
+                        <div class="case-block">
+                            <h4>&gt; Solution</h4>
+                            <p>
+                                Built an interactive Power BI dashboard with cohort counts, credit tracking, student
+                                groups, and drilldown detail.
+                            </p>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Student Analytics</span>
+                            <span>Executive Reporting</span>
+                        </div>
+
+                        <div class="impact-panel">
+                            <h4>&gt; Impact</h4>
+                            <ul>
+                                <li>Improved visibility into cohort progress.</li>
+                                <li>Supported intervention planning.</li>
+                                <li>Turned static reports into actionable monitoring.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- PEOPLESoft DATA WAREHOUSE -->
+                    <article class="case-card">
+                        <div class="case-card-header">
+                            <span class="project-badge">SQL SERVER</span>
+                            <span class="project-status">WAREHOUSE</span>
+                        </div>
+
+                        <img src="./images/data-warehouse.png" alt="Data warehouse project screenshot"
+                            class="case-image">
+
+                        <h3>PeopleSoft Data Warehouse</h3>
+
+                        <p class="case-tagline">ETL packages importing 79 extracts into SQL Server.</p>
+
+                        <div class="case-block">
+                            <h4>&gt; Problem</h4>
+                            <p>
+                                Institutional reporting required reliable data from two PeopleSoft databases and
+                                repeated extract processes.
+                            </p>
+                        </div>
+
+                        <div class="case-block">
+                            <h4>&gt; Solution</h4>
+                            <p>
+                                Designed and maintained SSIS packages to load structured extracts into a SQL Server data
+                                warehouse for reporting.
+                            </p>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>SQL Server</span>
+                            <span>SSIS</span>
+                            <span>SSRS</span>
+                            <span>SharePoint BI</span>
+                        </div>
+
+                        <div class="impact-panel">
+                            <h4>&gt; Impact</h4>
+                            <ul>
+                                <li>Supported institutional compliance reporting.</li>
+                                <li>Improved reporting data reliability.</li>
+                                <li>Created reusable warehouse structures.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+                <!-- POWER BI PHONE DIRECTORY -->
                 <article class="case-card">
-                    <div class="case-card-header">
-                        <span class="project-badge">SNOWFLAKE</span>
-                        <span class="project-status">DATA PLATFORM</span>
-                    </div>
-
-                    <img src="./images/snowflake-platform.png" alt="Snowflake data platform screenshot" class="case-image">
-
-                    <h3>Lone Star Data Platform</h3>
-
-                    <p class="case-tagline">Layered data warehouse using raw, staging, and analytics schemas.</p>
-
+                    <div class="case-card-header"> <span class="project-badge">POWER PLATFORM</span> <span
+                            class="project-status">DEPLOYED</span> </div> <img src="./images/phone-directory.png"
+                        alt="Power BI Phone Directory" class="case-image">
+                    <h3>Power BI Phone Directory</h3>
+                    <p class="case-tagline"> Mobile-friendly phone directory integrated with Microsoft Teams. </p>
                     <div class="case-block">
                         <h4>&gt; Problem</h4>
-                        <p>
-                            District data lived across multiple spreadsheets, state reports, and vendor systems with no central analytics layer.
-                        </p>
+                        <p> Staff needed a searchable phone directory that worked across desktop and mobile devices
+                            without relying on static PDF exports. </p>
                     </div>
-
                     <div class="case-block">
                         <h4>&gt; Solution</h4>
-                        <p>
-                            Designed a Snowflake-based warehouse structure to load, clean, stage, and model education datasets for Power BI reporting.
-                        </p>
+                        <p> Built an automated workflow using Power Automate, Power Apps, Mitel Connect Director, and
+                            Power BI to create a live phone directory embedded directly inside Microsoft Teams. </p>
                     </div>
-
-                    <div class="tech-stack">
-                        <span>Snowflake</span>
-                        <span>SQL</span>
-                        <span>Power BI</span>
-                        <span>Data Modeling</span>
-                    </div>
-
+                    <div class="tech-stack"> <span>Power BI</span> <span>Power Automate</span> <span>Power Apps</span>
+                        <span>Microsoft Teams</span> <span>Mitel Connect</span> </div>
                     <div class="impact-panel">
                         <h4>&gt; Impact</h4>
                         <ul>
-                            <li>Created a modern analytics foundation.</li>
-                            <li>Separated raw, staging, and analytics layers.</li>
-                            <li>Prepared district data for reporting and reuse.</li>
+                            <li>Automated phone directory updates.</li>
+                            <li>Provided mobile-friendly staff lookup.</li>
+                            <li>Embedded directly into Teams.</li>
+                            <li>Supported multi-format export and printing.</li>
                         </ul>
                     </div>
                 </article>
+            </section>
 
-                <!-- CCMR CLASSIFICATION ENGINE -->
-                <article class="case-card">
-                    <div class="case-card-header">
-                        <span class="project-badge">SQL ENGINE</span>
-                        <span class="project-status">ACCOUNTABILITY</span>
-                    </div>
+            <footer class="status-bar">
+                <span>© 2026 MARICIA.COM</span>
+                <span>WORK ARCHIVE ONLINE</span>
+                <span>DATA OPS MODE ENABLED</span>
+            </footer>
 
-                    <img src="./images/ccmr-engine.png" alt="CCMR classification engine screenshot" class="case-image">
+        </main>
 
-                    <h3>CCMR Classification Engine</h3>
+    </div>
 
-                    <p class="case-tagline">TEA-aligned accountability logic for student CCMR buckets.</p>
-
-                    <div class="case-block">
-                        <h4>&gt; Problem</h4>
-                        <p>
-                            CCMR accountability logic required multiple rules across IBC tiers, TSI, dual credit, AP/IB, OnRamps, and special populations.
-                        </p>
-                    </div>
-
-                    <div class="case-block">
-                        <h4>&gt; Solution</h4>
-                        <p>
-                            Built classification logic to assign students into CCMR buckets, calculate IBC tier status, and support weighted scoring.
-                        </p>
-                    </div>
-
-                    <div class="tech-stack">
-                        <span>SQL Server</span>
-                        <span>Power BI</span>
-                        <span>DAX</span>
-                        <span>Accountability</span>
-                    </div>
-
-                    <div class="impact-panel">
-                        <h4>&gt; Impact</h4>
-                        <ul>
-                            <li>Reduced manual CCMR interpretation.</li>
-                            <li>Aligned reporting to TEA accountability rules.</li>
-                            <li>Supported campus and district dashboards.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- SDR ZIP SORTER -->
-                <article class="case-card">
-                    <div class="case-card-header">
-                        <span class="project-badge">PYTHON TOOL</span>
-                        <span class="project-status">DEPLOYED</span>
-                    </div>
-
-                    <img src="./images/sdr4.png" alt="Screenshot of SDR Zip Sorter desktop application" class="case-image">
-
-                    <h3>SDR Zip Sorter</h3>
-
-                    <p class="case-tagline">Desktop automation tool for organizing state assessment files.</p>
-
-                    <div class="case-block">
-                        <h4>&gt; Problem</h4>
-                        <p>
-                            SDR assessment files required manual sorting across STAAR, TELPAS, EOC, ODS, and TestHound workflows.
-                        </p>
-                    </div>
-
-                    <div class="case-block">
-                        <h4>&gt; Solution</h4>
-                        <p>
-                            Built a Python/Tkinter desktop tool to select ZIP files, choose a workflow mode, sort files, and generate unsorted logs.
-                        </p>
-                    </div>
-
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>Tkinter</span>
-                        <span>ZIP Processing</span>
-                        <span>Automation</span>
-                    </div>
-
-                    <div class="impact-panel">
-                        <h4>&gt; Impact</h4>
-                        <ul>
-                            <li>Reduced manual file handling.</li>
-                            <li>Standardized output folder structure.</li>
-                            <li>Created a GUI for non-technical users.</li>
-                        </ul>
-                    </div>
-
-                    <a class="modal-button" href="https://github.com/maricia/SDR-Sorter" target="_blank" rel="noopener">
-                        VIEW GITHUB
-                    </a>
-                </article>
-
-                <!-- CAMPUS SNAPSHOT DASHBOARD -->
-                <article class="case-card">
-                    <div class="case-card-header">
-                        <span class="project-badge">POWER BI</span>
-                        <span class="project-status">ANALYTICS</span>
-                    </div>
-
-                    <img src="./images/campus-snapshot.png" alt="Power BI campus accountability dashboard screenshot" class="case-image">
-
-                    <h3>Campus Snapshot Dashboard</h3>
-
-                    <p class="case-tagline">Multi-year accountability and demographic reporting.</p>
-
-                    <div class="case-block">
-                        <h4>&gt; Problem</h4>
-                        <p>
-                            Campus leaders needed one place to view accountability ratings, enrollment, demographics, and student indicators.
-                        </p>
-                    </div>
-
-                    <div class="case-block">
-                        <h4>&gt; Solution</h4>
-                        <p>
-                            Designed a Power BI dashboard combining rating history, enrollment counts, grade distribution, and student group indicators.
-                        </p>
-                    </div>
-
-                    <div class="tech-stack">
-                        <span>Power BI</span>
-                        <span>DAX</span>
-                        <span>Data Modeling</span>
-                        <span>TEA Data</span>
-                    </div>
-
-                    <div class="impact-panel">
-                        <h4>&gt; Impact</h4>
-                        <ul>
-                            <li>Created a single-page campus view.</li>
-                            <li>Improved access to accountability context.</li>
-                            <li>Supported data-informed campus conversations.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- GRADUATION EARLY WARNING -->
-                <article class="case-card">
-                    <div class="case-card-header">
-                        <span class="project-badge">POWER BI</span>
-                        <span class="project-status">EARLY WARNING</span>
-                    </div>
-
-                    <img src="./images/early-warning.png" alt="Graduation Early Warning System Power BI dashboard screenshot" class="case-image">
-
-                    <h3>Graduation Early Warning System</h3>
-
-                    <p class="case-tagline">Operational dashboard for monitoring cohort progress.</p>
-
-                    <div class="case-block">
-                        <h4>&gt; Problem</h4>
-                        <p>
-                            Graduation monitoring required student-level visibility into credits, cohort status, campus distribution, and support indicators.
-                        </p>
-                    </div>
-
-                    <div class="case-block">
-                        <h4>&gt; Solution</h4>
-                        <p>
-                            Built an interactive Power BI dashboard with cohort counts, credit tracking, student groups, and drilldown detail.
-                        </p>
-                    </div>
-
-                    <div class="tech-stack">
-                        <span>Power BI</span>
-                        <span>DAX</span>
-                        <span>Student Analytics</span>
-                        <span>Executive Reporting</span>
-                    </div>
-
-                    <div class="impact-panel">
-                        <h4>&gt; Impact</h4>
-                        <ul>
-                            <li>Improved visibility into cohort progress.</li>
-                            <li>Supported intervention planning.</li>
-                            <li>Turned static reports into actionable monitoring.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- PEOPLESoft DATA WAREHOUSE -->
-                <article class="case-card">
-                    <div class="case-card-header">
-                        <span class="project-badge">SQL SERVER</span>
-                        <span class="project-status">WAREHOUSE</span>
-                    </div>
-
-                    <img src="./images/data-warehouse.png" alt="Data warehouse project screenshot" class="case-image">
-
-                    <h3>PeopleSoft Data Warehouse</h3>
-
-                    <p class="case-tagline">ETL packages importing 79 extracts into SQL Server.</p>
-
-                    <div class="case-block">
-                        <h4>&gt; Problem</h4>
-                        <p>
-                            Institutional reporting required reliable data from two PeopleSoft databases and repeated extract processes.
-                        </p>
-                    </div>
-
-                    <div class="case-block">
-                        <h4>&gt; Solution</h4>
-                        <p>
-                            Designed and maintained SSIS packages to load structured extracts into a SQL Server data warehouse for reporting.
-                        </p>
-                    </div>
-
-                    <div class="tech-stack">
-                        <span>SQL Server</span>
-                        <span>SSIS</span>
-                        <span>SSRS</span>
-                        <span>SharePoint BI</span>
-                    </div>
-
-                    <div class="impact-panel">
-                        <h4>&gt; Impact</h4>
-                        <ul>
-                            <li>Supported institutional compliance reporting.</li>
-                            <li>Improved reporting data reliability.</li>
-                            <li>Created reusable warehouse structures.</li>
-                        </ul>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        <footer class="status-bar">
-            <span>© 2026 MARICIA.COM</span>
-            <span>WORK ARCHIVE ONLINE</span>
-            <span>DATA OPS MODE ENABLED</span>
-        </footer>
-
-    </main>
-
-</div>
-
-<div class="scanlines"></div>
+    <div class="scanlines"></div>
 
 </body>
+
 </html>

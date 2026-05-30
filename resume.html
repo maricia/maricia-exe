@@ -3,97 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | MARICIA.EXE</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>RESUME | MARICIA.EXE</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <div class="game-screen">
+
+    <header>
+        <div class="brand">maricia.com</div>
+
+        <div class="window-buttons">
+            <button>─</button>
+            <button>□</button>
+            <button>×</button>
+        </div>
+    </header>
+
     <main>
+
         <p class="path-line">
-> HOME / RESUME.EXE
-</p>
-<div class="resume-nav">
+            &gt; HOME / RESUME.EXE
+        </p>
 
-    <a href="./index.html" class="terminal-button">
-        ◄ MAIN MENU
-    </a>
+        <div class="resume-nav">
+            <a href="./index.html" class="terminal-button">◄ MAIN MENU</a>
+            <a href="./work.html" class="terminal-button">WORK PROJECTS ►</a>
+        </div>
 
-    <a href="./about.html" class="terminal-button">
-        ABOUT ►
-    </a>
+        <section class="case-study-zone">
+
+            <div class="terminal-heading">
+                <p class="terminal-kicker">&gt; RESUME ARCHIVE LOADED</p>
+
+                <h2>Maricia Alleman</h2>
+
+                <p>
+                    Senior Data Engineer · Analytics Engineer · BI Developer
+                    building SQL pipelines, Power BI models, automation tools,
+                    and data platforms from messy real-world systems.
+                </p>
+            </div>
+
+            <div class="tech-stack">
+                <span>SQL Server</span>
+                <span>Snowflake</span>
+                <span>Power BI</span>
+                <span>Python</span>
+                <span>Power Automate</span>
+                <span>Data Warehousing</span>
+                <span>ETL / ELT</span>
+                <span>Data Governance</span>
+            </div>
+
+            <br>
+
+            <div class="resume-nav">
+                <a
+                    href="./docs/Maricia_Alleman_Resume.pdf"
+                    class="terminal-button"
+                    target="_blank"
+                    rel="noopener">
+                    VIEW RESUME PDF
+                </a>
+
+                <a
+                    href="./docs/Maricia_Alleman_Resume.pdf"
+                    class="terminal-button"
+                    download>
+                    DOWNLOAD RESUME
+                </a>
+            </div>
+
+        </section>
+
+        <section class="case-study-zone">
+
+            <div class="terminal-heading">
+                <p class="terminal-kicker">&gt; CORE MISSIONS</p>
+
+                <h2>Projects Listed on Resume</h2>
+
+                <p>
+                    These match the selected projects on my resume so recruiters can move
+                    from resume summary to visual proof without getting lost in the dungeon.
+                </p>
+            </div>
+
+            <div class="case-study-grid">
+
+                <article class="case-card">
+                    <div class="case-card-header">
+                        <span class="project-badge">SNOWFLAKE</span>
+                        <span class="project-status">DATA PLATFORM</span>
+                    </div>
+
+                    <h3>Lone Star Data Platform</h3>
+
+                    <p class="case-tagline">
+                        Layered Snowflake architecture using raw, staging, and analytics schemas.
+                    </p>
+
+                    <div class="impact-panel">
+                        <h4>&gt; Resume Match</h4>
+                        <ul>
+                            <li>Centralized district data from disparate sources.</li>
+                            <li>Supported governed analytics workflows.</li>
+                            <li>Connected to automated Power BI reporting.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="case-card">
+                    <div class="case-card-header">
+                        <span class="project-badge">SQL ENGINE</span>
+                        <span class="project-status">ACCOUNTABILITY</span>
+                    </div>
+
+                    <h3>CCMR Classification Engine</h3>
+
+                    <p class="case-tagline">
+                        TEA-aligned accountability logic for CCMR buckets and IBC tier classification.
+                    </p>
+
+                    <div class="impact-panel">
+                        <h4>&gt; Resume Match</h4>
+                        <ul>
+                            <li>Built bucket assignment logic.</li>
+                            <li>Classified IBC tiers.</li>
+                            <li>Supported weighted accountability calculations.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="case-card">
+                    <div class="case-card-header">
+                        <span class="project-badge">PYTHON</span>
+                        <span class="project-status">DEPLOYED</span>
+                    </div>
+
+                    <h3>SDR Sorter</h3>
+
+                    <p class="case-tagline">
+                        Python/Tkinter desktop tool for routing STAAR, TELPAS, and EOC files.
+                    </p>
+
+                    <div class="impact-panel">
+                        <h4>&gt; Resume Match</h4>
+                        <ul>
+                            <li>Automated assessment file processing.</li>
+                            <li>Reduced manual sorting time.</li>
+                            <li>Improved consistency and file routing accuracy.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="case-card">
+                    <div class="case-card-header">
+                        <span class="project-badge">SQL SERVER</span>
+                        <span class="project-status">WAREHOUSE</span>
+                    </div>
+
+                    <h3>PeopleSoft Data Warehouse</h3>
+
+                    <p class="case-tagline">
+                        ETL packages importing 79 extracts into SQL Server.
+                    </p>
+
+                    <div class="impact-panel">
+                        <h4>&gt; Resume Match</h4>
+                        <ul>
+                            <li>Loaded structured extracts from two PeopleSoft databases.</li>
+                            <li>Supported SSRS and SharePoint-integrated reporting.</li>
+                            <li>Enabled institutional compliance reporting.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="case-card">
+                    <div class="case-card-header">
+                        <span class="project-badge">POWER PLATFORM</span>
+                        <span class="project-status">DEPLOYED</span>
+                    </div>
+
+                    <h3>Power BI Phone Directory</h3>
+
+                    <p class="case-tagline">
+                        Mobile-friendly staff phone directory embedded in Microsoft Teams.
+                    </p>
+
+                    <div class="impact-panel">
+                        <h4>&gt; Resume Match</h4>
+                        <ul>
+                            <li>Used Power Automate and Power Apps.</li>
+                            <li>Exported Mitel Connect Director data.</li>
+                            <li>Surfaced directory in Power BI with print/download options.</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="case-study-zone">
+
+            <div class="terminal-heading">
+                <p class="terminal-kicker">&gt; CAREER TIMELINE</p>
+
+                <h2>Experience Path</h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <h3>Director of District Data Analytics</h3>
+                    <p>Ector County ISD · Data platforms, Power BI, SQL pipelines, accountability reporting.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Chief Technology & Information Security Officer</h3>
+                    <p>Eastern New Mexico University - Ruidoso · Infrastructure, security, Power BI, automation.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>System Analyst II</h3>
+                    <p>University of Texas Permian Basin · SQL Server warehouse, SSIS, SSRS, SharePoint BI.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Programmer Analyst / Network Communications Specialist</h3>
+                    <p>Odessa College · ERP systems, reporting, UniData, automation, SQL processes.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Signal Support Specialist</h3>
+                    <p>U.S. Army · Communications systems, technical training, readiness documentation.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="status-bar">
+            <span>© 2026 MARICIA.COM</span>
+            <span>RESUME ARCHIVE ONLINE</span>
+            <span>DATA ENGINEER MODE ENABLED</span>
+        </footer>
+
+    </main>
 
 </div>
 
+<div class="scanlines"></div>
 
-
-<section class="panel resume-panel">
-
-    <h2>&gt; RESUME.EXE</h2>
-
-    <div class="resume-status">
-        <p><strong>STATUS:</strong> ACTIVE</p>
-        <p><strong>CLASS:</strong> Data Analytics / Automation / Systems</p>
-    </div>
-
-    <h3>&gt; SUMMARY</h3>
-
-    <p>
-        Director of District Data Analytics, Army Veteran, and Computer Scientist
-        with experience building SQL databases, Power BI reporting systems,
-        Python automation workflows, and enterprise analytics solutions.
-    </p>
-
-    <h3>&gt; CORE SKILLS</h3>
-
-    <div class="skill-tags">
-
-        <span>SQL Server</span>
-        <span>Power BI</span>
-        <span>Python</span>
-        <span>Snowflake</span>
-        <span>ETL/ELT</span>
-        <span>Automation</span>
-        <span>Git</span>
-        <span>JavaScript</span>
-
-    </div>
-
-    <h3>&gt; EXPERIENCE PATH</h3>
-
-    <div class="timeline">
-
-        <div class="timeline-item">
-            🚩 Director of District Data Analytics | ECISD
-        </div>
-
-        <div class="timeline-item">
-            💻 Chief Technology & Information Security Officer | ENMU
-        </div>
-
-        <div class="timeline-item">
-            📊 System Analyst II | UTPB
-        </div>
-
-        <div class="timeline-item">
-            🎖 Army Veteran
-        </div>
-
-    </div>
-
-    <br>
-
-    <a class="modal-button"
-    href="./files/Maricia_Master_Resume.pdf"
-    target="_blank">
-
-        DOWNLOAD RESUME
-
-    </a>
-
-</section>
-
-</main>
-</div>
 </body>
 </html>
