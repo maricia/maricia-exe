@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MARICIA.EXE | Job Tracker</title>
+  <link rel="stylesheet" href="job-tracker.css" />
+</head>
+<body>
+  <div class="crt"></div>
+  <main class="terminal">
+    <header class="topbar">
+      <div>
+        <p class="path">C:\MARICIA.EXE\CAREER_QUEST\TRACKER</p>
+        <h1>Job Tracker</h1>
+        <p class="subtitle">Powered by <code>Tracker_v6_Master.xlsx</code> → <code>data/jobs.json</code></p>
+      </div>
+      <div class="lights" aria-hidden="true"><span></span><span></span><span></span></div>
+    </header>
+
+    <section class="hud" id="hud"></section>
+
+    <section class="command-row">
+      <input id="search" type="search" placeholder="search company, position, status, notes..." />
+      <select id="statusFilter"><option value="">All statuses</option></select>
+      <select id="priorityFilter"><option value="">All priorities</option></select>
+      <button id="resetBtn">Reset</button>
+    </section>
+
+    <section class="quest-panel">
+      <div class="panel-head">
+        <h2>Application Log</h2>
+        <span id="countText"></span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Position</th>
+              <th>Status</th>
+              <th>Priority</th>
+              <th>Date Applied</th>
+              <th>Source</th>
+              <th>Resume</th>
+              <th>Last Contact</th>
+              <th>Next Follow Up</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody id="jobRows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <p>Update the Excel file, run the converter or let GitHub Actions update <code>data/jobs.json</code>, and this page refreshes its quest log.</p>
+    </footer>
+  </main>
+
+  <script src="job-tracker.js"></script>
+</body>
+</html>
