@@ -1,0 +1,62 @@
+# ==========================================
+
+# MARICIA.COM - PRIVATE JOB SEARCH FILES
+
+# ==========================================
+
+# Private job tracker pages
+
+job-tracker.html
+tracker-table.js
+
+# Private tracker data
+
+tracker.json
+tracker-private.json
+analytics-private.json
+
+# Excel job trackers
+
+Tracker*.xlsx
+Tracker*.xls
+Tracker*.xlsm
+
+# Job search folders
+
+job-search/
+tracker/
+private/
+
+# Gmail audit files
+
+gmail_audit*
+forensic_audit*
+application_audit*
+
+# Generated reports
+
+reports/
+exports/
+
+# Dashboard development files
+
+dashboard-private*
+tracker-private*
+
+# Python
+
+**pycache**/
+*.pyc
+
+# Windows
+
+Thumbs.db
+Desktop.ini
+
+# Mac
+
+.DS_Store
+
+# VS Code
+
+.vscode/
