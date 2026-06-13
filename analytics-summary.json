@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Job Hunt Command Center",
+    "public": true,
+    "description": "Public analytics data only."
+  },
+  "summary": {
+    "applications": 48,
+    "active": 38,
+    "responses": 34,
+    "interviews": 2,
+    "rejections": 10,
+    "pending": 36
+  },
+  "charts": {
+    "status": [
+      {
+        "label": "Active",
+        "count": 38
+      },
+      {
+        "label": "Rejected",
+        "count": 10
+      }
+    ],
+    "monthly": [],
+    "category": [],
+    "location": [],
+    "workType": [],
+    "funnel": [
+      {
+        "label": "Applications",
+        "count": 48
+      },
+      {
+        "label": "Responses",
+        "count": 34
+      },
+      {
+        "label": "Interviews",
+        "count": 2
+      },
+      {
+        "label": "Offers",
+        "count": 0
+      }
+    ]
+  }
+}

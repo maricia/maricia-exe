@@ -1,6 +1,6 @@
 async function loadTracker() {
-  const response = await fetch("tracker.json");
-  if (!response.ok) throw new Error("Could not load tracker.json");
+  const response = await fetch("analytics-summary.json");
+  if (!response.ok) throw new Error("Could not load analytics-summary.json");
   return response.json();
 }
 
