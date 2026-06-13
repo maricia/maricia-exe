@@ -11,50 +11,153 @@
     "responses": 34,
     "interviews": 2,
     "rejections": 10,
-    "pending": 36
+    "pending": 36,
+    "responseRate": 70.8,
+    "interviewRate": 4.2
+  },
+  "currentQuest": {
+    "primaryTarget": "Data Engineer / Analytics Engineer",
+    "secondaryTarget": "BI Developer / Data Analyst",
+    "searchMode": "Remote, Hybrid, or West Texas",
+    "focusAreas": [
+      "Education data systems",
+      "SQL and Power BI reporting",
+      "Automation and data quality",
+      "Assessment and accountability analytics"
+    ]
   },
   "charts": {
     "status": [
-      { "label": "Applied", "count": 31 },
-      { "label": "Rejected", "count": 10 },
-      { "label": "Under Consideration", "count": 4 },
-      { "label": "Interview", "count": 2 },
-      { "label": "Action Required", "count": 1 }
+      {
+        "label": "Applied",
+        "count": 31
+      },
+      {
+        "label": "Rejected",
+        "count": 10
+      },
+      {
+        "label": "Under Consideration",
+        "count": 4
+      },
+      {
+        "label": "Interview",
+        "count": 2
+      },
+      {
+        "label": "Action Required",
+        "count": 1
+      }
     ],
     "monthly": [
-      { "label": "Nov 2025", "count": 2 },
-      { "label": "Apr 2026", "count": 5 },
-      { "label": "May 2026", "count": 13 },
-      { "label": "Jun 2026", "count": 25 },
-      { "label": "Unknown", "count": 3 }
+      {
+        "label": "Nov 2025",
+        "count": 2
+      },
+      {
+        "label": "Apr 2026",
+        "count": 5
+      },
+      {
+        "label": "May 2026",
+        "count": 13
+      },
+      {
+        "label": "Jun 2026",
+        "count": 25
+      },
+      {
+        "label": "Date Pending",
+        "count": 3
+      }
     ],
     "category": [
-      { "label": "Software/Technology", "count": 16 },
-      { "label": "Uncategorized", "count": 14 },
-      { "label": "K-12 Education", "count": 6 },
-      { "label": "EdTech", "count": 4 },
-      { "label": "Higher Education", "count": 3 },
-      { "label": "Government", "count": 2 },
-      { "label": "Healthcare", "count": 2 },
-      { "label": "Energy", "count": 1 }
+      {
+        "label": "Software/Technology",
+        "count": 16
+      },
+      {
+        "label": "Needs Classification",
+        "count": 14
+      },
+      {
+        "label": "K-12 Education",
+        "count": 6
+      },
+      {
+        "label": "EdTech",
+        "count": 4
+      },
+      {
+        "label": "Higher Education",
+        "count": 3
+      },
+      {
+        "label": "Government",
+        "count": 2
+      },
+      {
+        "label": "Healthcare",
+        "count": 2
+      },
+      {
+        "label": "Energy",
+        "count": 1
+      }
     ],
     "location": [
-      { "label": "Unknown", "count": 30 },
-      { "label": "Remote", "count": 13 },
-      { "label": "Austin, TX", "count": 2 },
-      { "label": "Midland, TX", "count": 2 },
-      { "label": "Odessa, TX", "count": 1 }
+      {
+        "label": "Location Pending",
+        "count": 30
+      },
+      {
+        "label": "Remote",
+        "count": 13
+      },
+      {
+        "label": "Austin, TX",
+        "count": 2
+      },
+      {
+        "label": "Midland, TX",
+        "count": 2
+      },
+      {
+        "label": "Odessa, TX",
+        "count": 1
+      }
     ],
     "workType": [
-      { "label": "Unknown", "count": 31 },
-      { "label": "Remote", "count": 15 },
-      { "label": "Hybrid", "count": 2 }
+      {
+        "label": "Work Type Pending",
+        "count": 31
+      },
+      {
+        "label": "Remote",
+        "count": 15
+      },
+      {
+        "label": "Hybrid",
+        "count": 2
+      }
     ],
     "funnel": [
-      { "label": "Applications", "count": 48 },
-      { "label": "Responses", "count": 34 },
-      { "label": "Interviews", "count": 2 },
-      { "label": "Offers", "count": 0 }
+      {
+        "label": "Applications",
+        "count": 48
+      },
+      {
+        "label": "Responses",
+        "count": 34
+      },
+      {
+        "label": "Interviews",
+        "count": 2
+      },
+      {
+        "label": "Offers",
+        "count": 0
+      }
     ]
   }
 }
