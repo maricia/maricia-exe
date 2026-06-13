@@ -1,64 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MARICIA.EXE | Job Tracker</title>
-  <link rel="stylesheet" href="job-tracker.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Hunt Command Center</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
 </head>
 <body>
-  <div class="crt"></div>
-  <main class="terminal">
-    <header class="topbar">
-      <div>
-        <p class="path">C:\MARICIA.EXE\CAREER_QUEST\TRACKER</p>
-        <h1>Job Tracker</h1>
-        <p class="subtitle">Powered by <code>Tracker_v6_Master.xlsx</code> → <code>data/jobs.json</code></p>
-      </div>
-      <div class="lights" aria-hidden="true"><span></span><span></span><span></span></div>
-    </header>
-
-    <section class="hud" id="hud"></section>
-
-    <section class="command-row">
-      <input id="search" type="search" placeholder="search company, position, status, notes..." />
-      <select id="statusFilter"><option value="">All statuses</option></select>
-      <select id="priorityFilter"><option value="">All priorities</option></select>
-      <button id="resetBtn">Reset</button>
+  <main class="terminal-shell">
+    <section class="hero">
+      <p class="eyebrow">maricia.com // live tracker</p>
+      <h1>Job Hunt Command Center</h1>
+      <p class="subtitle">A retro terminal dashboard powered by the Excel tracker.</p>
+      <pre class="ascii" id="asciiSummary">LOADING SIGNAL...</pre>
     </section>
 
-    <section class="quest-panel">
-      <div class="panel-head">
-        <h2>Application Log</h2>
-        <span id="countText"></span>
-      </div>
+    <section class="kpi-grid" id="kpiGrid"></section>
 
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Company</th>
-              <th>Position</th>
-              <th>Status</th>
-              <th>Priority</th>
-              <th>Date Applied</th>
-              <th>Source</th>
-              <th>Resume</th>
-              <th>Last Contact</th>
-              <th>Next Follow Up</th>
-              <th>Notes</th>
-            </tr>
-          </thead>
-          <tbody id="jobRows"></tbody>
-        </table>
-      </div>
+    <section class="dashboard-grid">
+      <article class="panel wide">
+        <div class="panel-header">
+          <h2>Applications by Month</h2>
+          <span>velocity</span>
+        </div>
+        <div id="monthlyChart" class="chart"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Status Breakdown</h2>
+          <span>pipeline</span>
+        </div>
+        <div id="statusChart" class="chart"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Industry Breakdown</h2>
+          <span>targeting</span>
+        </div>
+        <div id="categoryChart" class="chart"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Location Breakdown</h2>
+          <span>map-lite</span>
+        </div>
+        <div id="locationChart" class="chart"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Interview Funnel</h2>
+          <span>conversion</span>
+        </div>
+        <div id="funnelChart" class="chart"></div>
+      </article>
+
+      <article class="panel wide">
+        <div class="panel-header">
+          <h2>Latest Activity</h2>
+          <span>radar feed</span>
+        </div>
+        <div id="activityFeed" class="activity-feed"></div>
+      </article>
     </section>
-
-    <footer>
-      <p>Update the Excel file, run the converter or let GitHub Actions update <code>data/jobs.json</code>, and this page refreshes its quest log.</p>
-    </footer>
   </main>
 
-  <script src="job-tracker.js"></script>
+  <script src="dashboard.js"></script>
 </body>
 </html>
