@@ -3,71 +3,59 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Job Hunt Command Center</title>
+  <title>Job Tracker // Application Table</title>
   <link rel="stylesheet" href="css/dashboard.css" />
 </head>
 <body>
   <main class="terminal-shell">
+    <nav class="top-nav">
+      <a href="index.html">HOME</a>
+      <a href="analytics.html">ANALYTICS</a>
+      <a href="job-tracker.html" class="active">TRACKER TABLE</a>
+    </nav>
+
     <section class="hero">
-      <p class="eyebrow">maricia.com // live tracker</p>
-      <h1>Job Hunt Command Center</h1>
-      <p class="subtitle">A retro terminal dashboard powered by the Excel tracker.</p>
-      <pre class="ascii" id="asciiSummary">LOADING SIGNAL...</pre>
+      <p class="eyebrow">maricia.com // working tracker</p>
+      <h1>Application Table</h1>
+      <p class="subtitle">Searchable application tracker. Keep this page unlinked if you do not want casual visitors finding it.</p>
+      <pre class="ascii">========================================
+ TRACKER TABLE // LOCAL COMMAND VIEW
+========================================
+Tip: type company, title, status, category, or location.
+========================================</pre>
     </section>
 
-    <section class="kpi-grid" id="kpiGrid"></section>
+    <section class="panel wide">
+      <div class="tracker-tools">
+        <input id="searchBox" type="search" placeholder="Search applications..." />
+        <select id="statusFilter" title="Filter by application status">
+          <option value="">All statuses</option>
+        </select>
+        <select id="categoryFilter" title="Filter by job category">
+          <option value="">All categories</option>
+        </select>
+      </div>
 
-    <section class="dashboard-grid">
-      <article class="panel wide">
-        <div class="panel-header">
-          <h2>Applications by Month</h2>
-          <span>velocity</span>
-        </div>
-        <div id="monthlyChart" class="chart"></div>
-      </article>
-
-      <article class="panel">
-        <div class="panel-header">
-          <h2>Status Breakdown</h2>
-          <span>pipeline</span>
-        </div>
-        <div id="statusChart" class="chart"></div>
-      </article>
-
-      <article class="panel">
-        <div class="panel-header">
-          <h2>Industry Breakdown</h2>
-          <span>targeting</span>
-        </div>
-        <div id="categoryChart" class="chart"></div>
-      </article>
-
-      <article class="panel">
-        <div class="panel-header">
-          <h2>Location Breakdown</h2>
-          <span>map-lite</span>
-        </div>
-        <div id="locationChart" class="chart"></div>
-      </article>
-
-      <article class="panel">
-        <div class="panel-header">
-          <h2>Interview Funnel</h2>
-          <span>conversion</span>
-        </div>
-        <div id="funnelChart" class="chart"></div>
-      </article>
-
-      <article class="panel wide">
-        <div class="panel-header">
-          <h2>Latest Activity</h2>
-          <span>radar feed</span>
-        </div>
-        <div id="activityFeed" class="activity-feed"></div>
-      </article>
+      <div class="table-wrap">
+        <table id="applicationTable">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Company</th>
+              <th>Position</th>
+              <th>Status</th>
+              <th>Category</th>
+              <th>Location</th>
+              <th>Work Type</th>
+              <th>Last Activity</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </section>
   </main>
 
-  <script src="dashboard.js"></script>
+  <script src="tracker-table.js"></script>
 </body>
 </html>

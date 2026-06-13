@@ -11,6 +11,7 @@ function pct(value, max) {
 
 function renderBars(targetId, rows, limit = 10) {
   const el = document.getElementById(targetId);
+  if (!el) return;
   const data = rows.slice(0, limit);
   const max = Math.max(...data.map(d => d.count), 1);
 
@@ -56,16 +57,6 @@ Last Update   : ${data.meta.generatedOn}
 ========================================`;
 }
 
-function renderActivity(items) {
-  const el = document.getElementById("activityFeed");
-  el.innerHTML = items.map(item => `
-    <div class="activity-item">
-      <strong>${item.company}</strong> — ${item.position}
-      <div class="meta">${item.statusGroup || item.status || "Unknown"} · Last activity: ${item.lastActivity || "Unknown"} · ${item.category}</div>
-    </div>
-  `).join("");
-}
-
 loadTracker()
   .then(data => {
     renderAscii(data);
@@ -74,8 +65,8 @@ loadTracker()
     renderBars("statusChart", data.charts.status, 8);
     renderBars("categoryChart", data.charts.category, 10);
     renderBars("locationChart", data.charts.location, 10);
+    renderBars("workTypeChart", data.charts.workType || [], 10);
     renderBars("funnelChart", data.charts.funnel, 4);
-    renderActivity(data.latestActivity);
   })
   .catch(error => {
     document.body.innerHTML = `<pre style="color:#ff6b6b;padding:24px;">Dashboard failed to load: ${error.message}</pre>`;
