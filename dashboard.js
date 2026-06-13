@@ -1,5 +1,5 @@
 async function loadTracker() {
-  const response = await fetch("analytics-summary.json");
+  const response = await fetch("analytics-summary.json?v=4");
   if (!response.ok) throw new Error("Could not load analytics-summary.json");
   return response.json();
 }
@@ -79,28 +79,46 @@ function renderCurrentQuest(quest) {
   const el = document.getElementById("currentQuest");
   if (!el) return;
 
-  const focusAreas = (quest?.focusAreas || []).map(item => `<li>${item}</li>`).join("");
+  const activeSkills = (quest?.activeSkills || []).map(item => `<li>${item}</li>`).join("");
 
   el.innerHTML = `
     <div class="quest-grid">
       <div>
-        <div class="quest-label">Primary Target</div>
-        <div class="quest-value">${quest?.primaryTarget || "Data role"}</div>
+        <div class="quest-label">Primary Quest</div>
+        <div class="quest-value">${quest?.primaryQuest || "Find next data role"}</div>
       </div>
       <div>
-        <div class="quest-label">Secondary Target</div>
-        <div class="quest-value">${quest?.secondaryTarget || "Analytics role"}</div>
+        <div class="quest-label">Current Region</div>
+        <div class="quest-value">${quest?.currentRegion || "Remote / West Texas"}</div>
       </div>
       <div>
-        <div class="quest-label">Search Mode</div>
-        <div class="quest-value">${quest?.searchMode || "Remote / Hybrid"}</div>
+        <div class="quest-label">Quest Status</div>
+        <div class="quest-value">${quest?.questStatus || "Searching"}</div>
       </div>
       <div>
-        <div class="quest-label">Focus Areas</div>
-        <ul class="quest-list">${focusAreas}</ul>
+        <div class="quest-label">Active Skills</div>
+        <ul class="quest-list">${activeSkills}</ul>
       </div>
     </div>
   `;
+}
+
+function renderQuestLog(items) {
+  const el = document.getElementById("questLog");
+  if (!el) return;
+
+  el.innerHTML = (items || []).map(item => `
+    <div class="quest-log-item">
+      <span class="quest-date">[${item.date}]</span>
+      <span>${item.event}</span>
+    </div>
+  `).join("");
+}
+
+function renderFooter(data) {
+  const el = document.getElementById("systemFooter");
+  if (!el) return;
+  el.textContent = `SYSTEM STATUS: ONLINE // LAST DATA SYNC: ${data.meta.generatedOn || "Unknown"} // PUBLIC DATASET MODE: ENABLED`;
 }
 
 loadTracker()
@@ -108,12 +126,15 @@ loadTracker()
     renderAscii(data);
     renderKpis(data.summary);
     renderCurrentQuest(data.currentQuest);
+    renderQuestLog(data.questLog);
+    renderFooter(data);
 
     renderBars("monthlyChart", data.charts.monthly || [], 12);
     renderBars("statusChart", data.charts.status || [], 8);
     renderBars("categoryChart", data.charts.category || [], 10);
     renderBars("locationChart", data.charts.location || [], 10);
     renderBars("workTypeChart", data.charts.workType || [], 10);
+    renderBars("techStackChart", data.charts.techStack || [], 10);
     renderBars("funnelChart", data.charts.funnel || [], 4);
   })
   .catch(error => {

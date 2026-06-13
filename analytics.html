@@ -7,15 +7,13 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-1YVMW5SDKR');
     </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Analytics // Job Hunt Command Center</title>
-  <link rel="stylesheet" href="./css/dashboard.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/dashboard.css?v=3" />
+  <link rel="stylesheet" href="css/dashboard.css?v=4" />
 </head>
 <body>
   <main class="terminal-shell">
@@ -91,9 +89,29 @@
         </div>
         <div id="workTypeChart" class="chart"></div>
       </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Tech Stack Demand</h2>
+          <span>signal scan</span>
+        </div>
+        <div id="techStackChart" class="chart"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Quest Log</h2>
+          <span>recent milestones</span>
+        </div>
+        <div id="questLog" class="quest-log"></div>
+      </article>
     </section>
+
+    <footer class="system-footer" id="systemFooter">
+      SYSTEM STATUS: ONLINE
+    </footer>
   </main>
 
-  <script src="dashboard.js"></script>
+  <script src="dashboard.js?v=4"></script>
 </body>
 </html>

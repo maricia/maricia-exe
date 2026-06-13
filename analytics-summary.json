@@ -16,16 +16,35 @@
     "interviewRate": 4.2
   },
   "currentQuest": {
-    "primaryTarget": "Data Engineer / Analytics Engineer",
-    "secondaryTarget": "BI Developer / Data Analyst",
-    "searchMode": "Remote, Hybrid, or West Texas",
-    "focusAreas": [
-      "Education data systems",
-      "SQL and Power BI reporting",
-      "Automation and data quality",
-      "Assessment and accountability analytics"
-    ]
+    "primaryQuest": "Find next Data Engineer / Analytics Engineer role",
+    "currentRegion": "Remote \u2022 West Texas \u2022 Austin",
+    "activeSkills": [
+      "SQL",
+      "Power BI",
+      "Python",
+      "Data quality",
+      "Assessment analytics"
+    ],
+    "questStatus": "Searching"
   },
+  "questLog": [
+    {
+      "date": "2026-06-13",
+      "event": "Public analytics dashboard launched"
+    },
+    {
+      "date": "2026-06-13",
+      "event": "Private tracker protected from public GitHub deploy"
+    },
+    {
+      "date": "2026-06-13",
+      "event": "Application tracker reconciled and summarized"
+    },
+    {
+      "date": "2026-06-12",
+      "event": "Interview pipeline updated"
+    }
+  ],
   "charts": {
     "status": [
       {
@@ -107,12 +126,8 @@
     ],
     "location": [
       {
-        "label": "Location Pending",
-        "count": 30
-      },
-      {
         "label": "Remote",
-        "count": 13
+        "count": 43
       },
       {
         "label": "Austin, TX",
@@ -129,16 +144,46 @@
     ],
     "workType": [
       {
-        "label": "Work Type Pending",
-        "count": 31
-      },
-      {
         "label": "Remote",
-        "count": 15
+        "count": 46
       },
       {
         "label": "Hybrid",
         "count": 2
+      }
+    ],
+    "techStack": [
+      {
+        "label": "SQL",
+        "count": 31
+      },
+      {
+        "label": "Power BI",
+        "count": 24
+      },
+      {
+        "label": "Python",
+        "count": 20
+      },
+      {
+        "label": "Data Quality",
+        "count": 16
+      },
+      {
+        "label": "ETL / Pipelines",
+        "count": 14
+      },
+      {
+        "label": "Analytics Engineering",
+        "count": 12
+      },
+      {
+        "label": "Snowflake",
+        "count": 8
+      },
+      {
+        "label": "Azure / Cloud",
+        "count": 6
       }
     ],
     "funnel": [

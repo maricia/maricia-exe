@@ -74,6 +74,7 @@ h1 {
   color: var(--accent);
   font-size: clamp(2rem, 5vw, 4rem);
   margin: 8px 0;
+  text-shadow: 0 0 14px var(--glow);
 }
 
 .subtitle { color: var(--muted); }
@@ -152,6 +153,12 @@ h1 {
   margin: 8px 0;
 }
 
+.bar-label {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .bar-track {
   border: 1px solid var(--border);
   height: 16px;
@@ -189,11 +196,38 @@ h1 {
 .quest-value {
   color: var(--accent);
   margin-top: 8px;
+  line-height: 1.35;
 }
 
 .quest-list {
   margin: 8px 0 0;
   padding-left: 18px;
+}
+
+.quest-log {
+  display: grid;
+  gap: 10px;
+}
+
+.quest-log-item {
+  border-left: 3px solid var(--accent);
+  background: rgba(11,31,20,.65);
+  padding: 10px 12px;
+}
+
+.quest-date {
+  color: var(--accent-2);
+  margin-right: 8px;
+}
+
+.system-footer {
+  border: 1px solid var(--border);
+  background: rgba(7,19,13,.9);
+  color: var(--accent-2);
+  margin-top: 12px;
+  padding: 12px 14px;
+  text-transform: uppercase;
+  box-shadow: 0 0 18px var(--glow);
 }
 
 .empty-state {
