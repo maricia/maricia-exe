@@ -73,7 +73,7 @@ body {
 
 h1 {
   color: var(--accent);
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
   margin: 4px 0 8px;
   line-height: 1;
   text-shadow: 0 0 14px var(--glow);
@@ -100,6 +100,7 @@ h1 {
 
 .kpi {
   padding: 14px;
+  box-shadow: 0 0 12px rgba(57,255,136,.15);
 }
 
 .kpi .label {
