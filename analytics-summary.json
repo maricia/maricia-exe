@@ -9,11 +9,11 @@
     "applications": 51,
     "active": 41,
     "responses": 37,
-    "interviews": 3,
+    "interviews": 2,
     "rejections": 10,
     "pending": 38,
     "responseRate": 72.5,
-    "interviewRate": 5.9
+    "interviewRate": 3.9
   },
   "currentQuest": {
     "primaryQuest": "Secure next Data, PEIMS, Accountability, or Analytics role",
