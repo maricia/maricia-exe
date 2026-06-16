@@ -2,18 +2,18 @@
   "meta": {
     "title": "Job Hunt Command Center",
     "public": true,
-    "generatedOn": "2026-06-13",
+    "generatedOn": "2026-06-16",
     "description": "Public analytics only. No company names, recruiter names, notes, salary fields, or detailed application rows."
   },
   "summary": {
-    "applications": 48,
-    "active": 38,
-    "responses": 34,
-    "interviews": 2,
+    "applications": 51,
+    "active": 41,
+    "responses": 37,
+    "interviews": 3,
     "rejections": 10,
-    "pending": 36,
-    "responseRate": 70.8,
-    "interviewRate": 4.2
+    "pending": 38,
+    "responseRate": 72.5,
+    "interviewRate": 5.9
   },
   "currentQuest": {
     "primaryQuest": "Find next Data Engineer / Analytics Engineer role",
@@ -28,6 +28,10 @@
     "questStatus": "Searching"
   },
   "questLog": [
+    {
+      "date": "2026-06-16",
+      "event": "ECISD application reconciliation completed and tracker v16 created"
+    },
     {
       "date": "2026-06-13",
       "event": "Public analytics dashboard launched"
