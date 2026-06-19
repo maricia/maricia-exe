@@ -1,123 +1,126 @@
 {
   "meta": {
     "title": "Job Hunt Command Center",
-    "public": true,
-    "generatedOn": "2026-06-16",
-    "description": "Public analytics only. No company names, recruiter names, notes, salary fields, or detailed application rows."
+    "generatedOn": "2026-06-19",
+    "recordCount": 55
   },
   "summary": {
-    "applications": 51,
-    "active": 41,
-    "responses": 37,
-    "interviews": 2,
-    "rejections": 10,
-    "pending": 38,
-    "responseRate": 72.5,
-    "interviewRate": 3.9
+    "applications": 55,
+    "active": 42,
+    "responses": 42,
+    "interviews": 3,
+    "rejections": 13,
+    "pending": 39
   },
   "currentQuest": {
-    "primaryQuest": "Secure next Data, PEIMS, Accountability, or Analytics role",
-    "currentRegion": "Remote \u2022 West Texas \u2022 Austin",
+    "primaryQuest": "Data Analyst / Data Governance Role",
+    "currentRegion": "West Texas / Remote",
+    "questStatus": "Active Search",
     "activeSkills": [
       "SQL",
+      "Data Governance",
       "Power BI",
       "Python",
-      "Data quality",
-      "Assessment analytics"
-    ],
-    "questStatus": "Searching"
+      "Education Data"
+    ]
   },
   "questLog": [
     {
-      "date": "2026-06-16",
-      "event": "Applied for 3 ECISD positions and completed Tracker v16 reconciliation"
+      "date": "2026-06-19",
+      "event": "ProPetro recruiter screen scheduled for June 22."
     },
     {
-      "date": "2026-06-13",
-      "event": "Public analytics dashboard launched"
+      "date": "2026-06-18",
+      "event": "Completed TEA Data Analyst IV interview."
     },
     {
-      "date": "2026-06-13",
-      "event": "Private tracker protected from public GitHub deploy"
-    },
-    {
-      "date": "2026-06-13",
-      "event": "Application tracker reconciled and summarized"
-    },
-    {
-      "date": "2026-06-12",
-      "event": "Interview pipeline updated"
+      "date": "2026-06-18",
+      "event": "Wiley application closed."
     }
   ],
   "charts": {
     "status": [
       {
+        "label": "Rejected / Closed",
+        "count": 2
+      },
+      {
+        "label": "Interview Scheduled",
+        "count": 2
+      },
+      {
         "label": "Applied",
-        "count": 31
+        "count": 36
+      },
+      {
+        "label": "Applied / Next Steps",
+        "count": 1
       },
       {
         "label": "Rejected",
         "count": 10
       },
       {
-        "label": "Under Consideration",
-        "count": 4
-      },
-      {
-        "label": "Interview",
+        "label": "Recruiter Contact / Verify Application",
         "count": 2
       },
       {
-        "label": "Action Required",
+        "label": "Interviewed -> Rejected",
         "count": 1
-      }
-    ],
-    "monthly": [
-      {
-        "label": "Nov 2025",
-        "count": 2
       },
       {
-        "label": "Apr 2026",
-        "count": 5
-      },
-      {
-        "label": "May 2026",
-        "count": 13
-      },
-      {
-        "label": "Jun 2026",
-        "count": 25
-      },
-      {
-        "label": "Date Pending",
-        "count": 3
+        "label": "Under Consideration",
+        "count": 1
       }
     ],
     "category": [
       {
-        "label": "Software/Technology",
-        "count": 16
+        "label": "Data Analytics",
+        "count": 1
       },
       {
-        "label": "Needs Classification",
-        "count": 14
+        "label": "Energy / Data Governance",
+        "count": 1
       },
       {
-        "label": "K-12 Education",
-        "count": 6
+        "label": "Aerospace / Defense",
+        "count": 1
+      },
+      {
+        "label": "Higher Education",
+        "count": 4
+      },
+      {
+        "label": "Energy / Software",
+        "count": 1
+      },
+      {
+        "label": "Data Analytics / Data Governance",
+        "count": 1
+      },
+      {
+        "label": "Government",
+        "count": 2
+      },
+      {
+        "label": "Energy / Business Analysis",
+        "count": 1
       },
       {
         "label": "EdTech",
         "count": 4
       },
       {
-        "label": "Higher Education",
-        "count": 3
+        "label": "Software/Technology",
+        "count": 16
       },
       {
-        "label": "Government",
-        "count": 2
+        "label": "Unknown",
+        "count": 14
+      },
+      {
+        "label": "K-12 Education",
+        "count": 6
       },
       {
         "label": "Healthcare",
@@ -131,77 +134,91 @@
     "location": [
       {
         "label": "Remote",
-        "count": 43
+        "count": 8
+      },
+      {
+        "label": "Midland, TX",
+        "count": 3
+      },
+      {
+        "label": "Fort Worth, TX",
+        "count": 1
+      },
+      {
+        "label": "Odessa, TX",
+        "count": 2
+      },
+      {
+        "label": "Permian Basin",
+        "count": 1
+      },
+      {
+        "label": "Unknown",
+        "count": 38
       },
       {
         "label": "Austin, TX",
         "count": 2
-      },
-      {
-        "label": "Midland, TX",
-        "count": 2
-      },
-      {
-        "label": "Odessa, TX",
-        "count": 1
       }
     ],
     "workType": [
       {
         "label": "Remote",
-        "count": 46
+        "count": 12
+      },
+      {
+        "label": "Onsite/Hybrid",
+        "count": 2
+      },
+      {
+        "label": "Onsite",
+        "count": 1
+      },
+      {
+        "label": "Unknown",
+        "count": 38
       },
       {
         "label": "Hybrid",
         "count": 2
       }
     ],
+    "monthly": [
+      {
+        "label": "Unknown",
+        "count": 55
+      }
+    ],
     "techStack": [
       {
         "label": "SQL",
-        "count": 31
+        "count": 1
       },
       {
         "label": "Power BI",
-        "count": 24
+        "count": 1
       },
       {
         "label": "Python",
-        "count": 20
+        "count": 1
       },
       {
-        "label": "Data Quality",
-        "count": 16
-      },
-      {
-        "label": "ETL / Pipelines",
-        "count": 14
-      },
-      {
-        "label": "Analytics Engineering",
-        "count": 12
-      },
-      {
-        "label": "Snowflake",
-        "count": 8
-      },
-      {
-        "label": "Azure / Cloud",
-        "count": 6
+        "label": "Data Governance",
+        "count": 1
       }
     ],
     "funnel": [
       {
         "label": "Applications",
-        "count": 48
+        "count": 55
       },
       {
         "label": "Responses",
-        "count": 34
+        "count": 42
       },
       {
         "label": "Interviews",
-        "count": 2
+        "count": 3
       },
       {
         "label": "Offers",
