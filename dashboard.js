@@ -1,5 +1,5 @@
 async function loadTracker() {
-  const response = await fetch("analytics-summary.json?v=5");
+  const response = await fetch("tracker.json?v=5");
   if (!response.ok) throw new Error("Could not load analytics-summary.json");
   return response.json();
 }
