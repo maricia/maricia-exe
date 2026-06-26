@@ -60,3 +60,8 @@ Desktop.ini
 # VS Code
 
 .vscode/
+
+credentials.json
+token.json
+*.backup_*.json
+job_email_review_needed.csv
